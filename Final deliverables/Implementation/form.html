@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title style="font-family: Arial;">Loan prediction</title>
+
+
+</head>
+<body style="font-family: Arial; background-color:#D3D3D3;">
+	<section class="form">
+	<form action="/predict" method="GET">
+    <table border="0" align="center">
+    <tbody>
+		<h1 >Find out whether your loan will be approved or not</h1>
+
+    <tr>
+    <td><label for="gender">Gender : </label></td>
+    <td><input type="radio" name="gender" value="male"/> Male 
+    <input type="radio" name="gender" value="female"/> Female   
+    <br>
+    <br>
+    </td>
+    </tr>
+
+	<tr>
+	<td><label for="married">Married : </label></td>
+	<td><input id="married" maxlength="50" name="married" type="text" />
+	<br>
+	<br>
+	</td>
+	</tr>
+
+	<tr>
+	<td><label for="dependent">No. of dependents: </label></td>
+	<td><input id="dependent" maxlength="50" name="dependent" type="text" />
+	<br>
+	<br>
+	</td>
+	</tr>
+
+	<tr>
+	<td><label for="education">Education: </label></td>
+	<td><input id="education" maxlength="50" name="education" type="text" />
+	<br>
+	<br>
+	</td>
+	</tr>
+
+	<tr>
+	<td><label for="selfe">Self employed: </label></td>
+	<td><input type="radio" name="selfe" value="yes"/> Yes
+	<input type="radio" name="selfe" value="no"/> No   
+	<br>
+	<br>
+	</td>
+	</tr>
+
+    <tr>
+    <td><label for="income">Applicant income: </label></td>
+    <td><input id="income" maxlength="50" name="income" type="text" />
+    <br>
+    <br>
+    </td>
+    </tr>
+
+    <tr>
+    <td><label for="coincome">Co Applicant income: </label></td>
+    <td><input id="coincome" maxlength="50" name="coincome" type="text" />
+    <br>
+    <br>
+    </td>
+    </tr>
+
+    <tr>
+    <td><label for="loanamnt">Loan amount: </label></td>
+    <td><input id="loanamnt" maxlength="50" name="loanamnt" type="text" />
+    <br>
+    <br>
+    </td>
+    </tr>
+
+    <tr>
+    <td><label for="loanamntterm">Loan amount term: </label></td>
+    <td><input id="loanamntterm" maxlength="50" name="loanamntterm" type="text" />
+    <br>
+    <br>
+    </td>
+    </tr>
+
+
+    <tr>
+    <td><label for="credhistory">Credit History: </label></td>
+    <td><input id="credhistory" maxlength="50" name="credhistory" type="text" />
+    <br>
+    <br>
+    </td>
+    </tr>
+    
+
+    <tr>
+    <td><label for="proparea">Property area: </label></td>
+    <td><input id="proparea" maxlength="50" name="proparea" type="text" />
+    <br>
+    <br>
+    </td>
+    </tr>
+        
+            
+
+	</tbody>
+	</table><center>
+	<input name="Submit" type="Submit" value="Submit" id="button"/></center>
+	</form> 
+  </section>  
+ 
+</body>
+</html>
